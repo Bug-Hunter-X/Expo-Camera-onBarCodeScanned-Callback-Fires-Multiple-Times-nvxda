@@ -1,0 +1,1 @@
+This bug occurs when using the Expo `Camera` API with a custom `onBarCodeScanned` function.  The issue is that the callback function is triggered multiple times for a single barcode, leading to unwanted behavior and performance issues.  The barcode is scanned repeatedly as long as the barcode remains within the camera's viewfinder, creating a flood of redundant calls.
